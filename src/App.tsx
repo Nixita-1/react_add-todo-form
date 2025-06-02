@@ -5,8 +5,8 @@ import usersFromServer from './api/users';
 import todosFromServer from './api/todos';
 import { TodoList } from './components/TodoList';
 import { TodoWithUser } from './entities/TodoWithUser';
-import { findUserById } from './services/userServise';
-import { getNewTodoID } from './services/todoServise';
+import { findUserById } from './services/userService';
+import { getNewTodoID } from './services/todoService';
 
 const todosWithUser: TodoWithUser[] = todosFromServer.map(todo => {
   return {
